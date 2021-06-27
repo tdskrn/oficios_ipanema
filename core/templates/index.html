@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #container-imagem {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            background: url("{% static 'images/fundo.jpg' %}");
+            background-size: cover;
+        }
+        #btn-admin{
+        position: absolute;
+        top:8px;
+        right:8px;
+
+        }
+        .btn-hover{
+            background-color: unset;
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(255,255,255);
+            }
+
+        .btn-hover:hover{
+            background-color:white !important;
+            color:#136ACF !important;
+            transition-duration:0.3s;
+            }
+    </style>
+</head>
+<body>
+
+    <div id="container-imagem"></div>
+    <div id="btn-admin">
+       <a href="/admin"> <button class="btn-hover"> Acesso à área restrita.</button></a>
+    </div>
+
+</body>
+</html>
