@@ -1,0 +1,1 @@
+web: gunicorn controle_oficio_ipanema.wsgi --logfile -
